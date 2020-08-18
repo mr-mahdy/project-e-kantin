@@ -43,34 +43,27 @@
                         <div class="collapse navbar-collapse main-menu-item justify-content-end" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
+                                    <a class="nav-link" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="about.html">About</a>
+                                    <a class="nav-link" href="/menu">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="food_menu.html">Menu</a>
+                                    <a class="nav-link" href="/about">About</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="chefs.html">Chefs</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Blog
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="blog.html">Blog</a>
-                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
-                                        <a class="dropdown-item" href="elements.html">Elements</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                <li>
+                                    <form class="form-inline active-pink-2 active-pink-3">
+                                        <input class="form-control form-control-sm ml-2 w-75" type="text" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-light">
+                                            <i class="fas fa-search active-pink-2" aria-hidden="true"></i>
+                                        </button>
+                                    </form>
                                 </li>
                             </ul>
                         </div>
+
                         <div class="menu_btn">
-                            <a href="#" class="single_page_btn d-none d-sm-block">book a tabel</a>
+                            <a href="#reservation" class="btn_1 d-none d-sm-block">Reservation&nbsp;</a>
                         </div>
                     </nav>
                 </div>

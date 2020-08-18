@@ -12,6 +12,12 @@ class PagesController extends Controller
         return view('index');
     }
 
+    // page menu
+    public function menu()
+    {
+        return view('menu');
+    }
+
     // page about
     public function about()
     {
