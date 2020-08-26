@@ -8,24 +8,24 @@
     <title>@yield('title')</title>
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="{{ url('css/animate.css') }}">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="{{ url('css/owl.carousel.min.css') }}">
     <!-- themify CSS -->
-    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="{{ url('css/themify-icons.css') }}">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="{{ url('css/flaticon.css') }}">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="{{ url('css/magnific-popup.css') }}">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/gijgo.min.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="{{ url('css/slick.css') }}">
+    <link rel="stylesheet" href="{{ url('css/gijgo.min.css') }}">
+    <link rel="stylesheet" href="{{ url('css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ url('css/all.css') }}">
     <!-- style CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ url('css/style.css') }}">
 </head>
 
 <body>
@@ -160,25 +160,25 @@
 
     <!-- jquery plugins here-->
     <!-- jquery -->
-    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="{{ url('js/jquery-1.12.1.min.js') }}"></script>
     <!-- popper js -->
-    <script src="js/popper.min.js"></script>
+    <script src="{{ url('js/popper.min.js') }}"></script>
     <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url('js/bootstrap.min.js') }}"></script>
     <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="{{ url('js/jquery.magnific-popup.js') }}"></script>
     <!-- swiper js -->
-    <script src="js/swiper.min.js"></script>
+    <script src="{{ url('js/swiper.min.js') }}"></script>
     <!-- swiper js -->
-    <script src="js/masonry.pkgd.js"></script>
+    <script src="{{ url('js/masonry.pkgd.js') }}"></script>
     <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="{{ url('js/owl.carousel.min.js') }}"></script>
     <!-- swiper js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="{{ url('js/slick.min.js') }}"></script>
+    <script src="{{ url('js/gijgo.min.js') }}"></script>
+    <script src="{{ url('js/jquery.nice-select.min.js') }}"></script>
     <!-- custom js -->
-    <script src="js/custom.js"></script>
+    <script src="{{ url('js/custom.js') }}"></script>
 </body>
 
 </html>
