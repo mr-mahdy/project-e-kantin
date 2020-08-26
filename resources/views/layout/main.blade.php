@@ -43,13 +43,13 @@
                         <div class="collapse navbar-collapse main-menu-item justify-content-end" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/">Home</a>
+                                    <a class="nav-link" href="{{ url('/') }}">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/menu">Menu</a>
+                                    <a class="nav-link" href="{{ url('/menu') }}">Menu</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/about">About</a>
+                                    <a class="nav-link" href="{{ url('/about') }}">About</a>
                                 </li>
                                 <li>
                                     <form class="form-inline active-pink-2 active-pink-3">
