@@ -1,5 +1,7 @@
 @extends('layout/main')
 
+@section('title', 'Home')
+
 @section('banner')
 <!-- banner part start-->
 <section class="banner_part">
@@ -9,11 +11,11 @@
                 <div class="banner_text">
                     <div class="banner_text_iner">
                         <h5>Expensive but the best</h5>
-                        <h1>Canteen Unpas Deliciousness jumping into the mouth</h1>
-                        <p>&nbsp;e-canteen Unpas adalah sebuah Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur, odit doloremque nisi neque iusto dicta fugiat libero fuga quo atque! Architecto praesentium, expedita. Fuga esse, provident. Obcaecati modi, aliquid.</p>
+                        <h1>Ekantin Unpas Deliciousness jumping into the mouth</h1>
+                        <p>&nbsp;Ekantin Unpas is Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt aspernatur, odit doloremque nisi neque iusto dicta fugiat libero fuga quo atque! Architecto praesentium, expedita. Fuga esse, provident. Obcaecati modi, aliquid.</p>
                         <div class="banner_btn">
                             <div class="banner_btn_iner">
-                                <a href="#reservation" class="btn_2">Reservation <img src="img/icon/left_1.svg" alt=""></a>
+                                <a href="{{ url('/#reservation')}}" class="btn_2">Reservation <img src="img/icon/left_1.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -37,79 +39,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 col-lg-4">
-                <div class="single_blog_item">
-                    <div class="single_blog_img">
-                        <img src="img/food_item/food_item_1.png" alt="">
-                    </div>
-                    <div class="single_blog_text">
-                        <h3>Indian Burger</h3>
-                        <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                        <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="single_blog_item">
-                    <div class="single_blog_img">
-                        <img src="img/food_item/food_item_2.png" alt="">
-                    </div>
-                    <div class="single_blog_text">
-                        <h3>Cremy Noodles</h3>
-                        <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                        <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="single_blog_item">
-                    <div class="single_blog_img">
-                        <img src="img/food_item/food_item_3.png" alt="">
-                    </div>
-                    <div class="single_blog_text">
-                        <h3>Honey Meat</h3>
-                        <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                        <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="single_blog_item">
-                    <div class="single_blog_img">
-                        <img src="img/food_item/food_item_3.png" alt="">
-                    </div>
-                    <div class="single_blog_text">
-                        <h3>Honey Meat</h3>
-                        <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                        <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="single_blog_item">
-                    <div class="single_blog_img">
-                        <img src="img/food_item/food_item_3.png" alt="">
-                    </div>
-                    <div class="single_blog_text">
-                        <h3>Honey Meat</h3>
-                        <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                        <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="single_blog_item">
-                    <div class="single_blog_img">
-                        <img src="img/food_item/food_item_3.png" alt="">
-                    </div>
-                    <div class="single_blog_text">
-                        <h3>Honey Meat</h3>
-                        <p>Was brean shed moveth day yielding tree yielding day were female and </p>
-                        <a href="#" class="btn_3">Read More <img src="img/icon/left_2.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
+        <div class="row card-menu">
 
         </div>
     </div>
@@ -130,58 +60,70 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="regervation_part_iner">
-                    <form>
+                    <form method="POST" action="{{ url('/reservation') }}">
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Name *">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="password" class="form-control" id="inputPassword4" placeholder="Email address *">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <select class="form-control" id="Select">
-                                    <option value="1" selected>Persons *</option>
-                                    <option value="2">Number of guests 1</option>
-                                    <option value="3">Number of guests 2</option>
-                                    <option value="4">Number of guests 3</option>
-                                    <option value="5">Number of guests 4</option>
-                                </select>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <input type="text" class="form-control" id="pnone" placeholder="Phone number *">
-                            </div>
-                            <div class="form-group col-md-6">
-                                <div class="input-group date">
-                                    <input id="datepicker" type="text" class="form-control" placeholder="Date *" />
-                                </div>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <select class="form-control" id="Select2">
-                                    <option value="" selected>Time *</option>
-                                    <option value="1">8 AM TO 10AM</option>
-                                    <option value="1">10 AM TO 12PM</option>
-                                    <option value="1">12PM TO 2PM</option>
-                                    <option value="1">2PM TO 4PM</option>
-                                    <option value="1">4PM TO 6PM</option>
-                                    <option value="1">6PM TO 8PM</option>
-                                    <option value="1">4PM TO 10PM</option>
-                                    <option value="1">10PM TO 12PM</option>
-                                </select>
+                            @csrf
+                            <div class="form-group col-md-12">
+                                <input type="text" name="nama" class="form-control @error('nama') is-invalid @enderror" placeholder="Your Name *">
+                                @error('nama')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                             <div class="form-group col-md-12">
-                                <textarea class="form-control" id="Textarea" rows="4" placeholder="Your Note *"></textarea>
+                                <input type="text" name="no_hp" class="form-control @error('no_hp') is-invalid @enderror" placeholder="Phone number *" maxlength="15">
+                                @error('no_hp')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group col-md-12">
+                                <select name="id_meja" class="form-control @error('no_meja') is-invalid @enderror" id="Select">
+                                    <option selected>Table number *</option>
+                                    @foreach($tables as $table)
+                                    <option value="{{$table->id}}">{{$table->no_meja}}</option>
+                                    @endforeach
+                                </select>
+                                @error('no_meja')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group col-md-12 clockpicker" data-placement="top" data-align="top" data-autoclose="true">
+                                <input name="waktu" id="waktu" type="text" class="form-control @error('waktu') is-invalid @enderror" autocomplete="off" placeholder="Time *">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                                @error('waktu')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
-
-
                         <div class="regerv_btn">
-                            <a href="#" class="btn_4">Book A Table</a>
+                            <button type="submit" class="btn_4">Book A Table</button>
                         </div>
                     </form>
                 </div>
             </div>
+            <div class="col-lg-6 bg-white shadow-lg p-4" style="border-radius: 10px;border-bottom: 5px solid #1cc88a;border-right: 5px solid #1cc88a;">
+                <h3>Reservation Schedules</h3>
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Nomor Meja</th>
+                                <th>Waktu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($reservations as $reservation)
+                            <tr>
+                                <td>{{ $reservation->table->no_meja }}</td>
+                                <td>Pukul {{ Carbon\Carbon::createFromFormat('H:i:s',$reservation->waktu)->format('H.i')  }}</td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
-    </div>
 </section>
 <!--::regervation_part end::-->
 @endsection

@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="{{ url('css/all.css') }}">
     <!-- style CSS -->
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('dist/bootstrap-clockpicker.min.css')}}">
+    <link href="{{ url('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +37,12 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand d-flex align-items-center justify-content-center" href="{{ url('/') }}">
+                            <div class="navbar-brand-icon">
+                                <i class="fas fa-store-alt"></i>
+                            </div>
+                            <div class="navbar-brand-text mx-2">eKantin</div>
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -46,24 +53,19 @@
                                     <a class="nav-link" href="{{ url('/') }}">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/menu') }}">Menu</a>
+                                    <a class="nav-link" href="{{ url('/menuHome') }}">Menu</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/about') }}">About</a>
                                 </li>
                                 <li>
-                                    <form class="form-inline active-pink-2 active-pink-3">
-                                        <input class="form-control form-control-sm ml-2 w-75" type="text" placeholder="Search" aria-label="Search">
-                                        <button class="btn btn-light">
-                                            <i class="fas fa-search active-pink-2" aria-hidden="true"></i>
-                                        </button>
-                                    </form>
+                                    <a class="nav-link" href="{{ url('/login') }}">Admin</a>
                                 </li>
                             </ul>
                         </div>
 
                         <div class="menu_btn">
-                            <a href="#reservation" class="btn_1 d-none d-sm-block">Reservation&nbsp;</a>
+                            <a href="{{ url('/#reservation') }}" class="btn_1 d-none d-sm-block">Reservation&nbsp;</a>
                         </div>
                     </nav>
                 </div>
@@ -82,78 +84,19 @@
 
     <!-- footer part start-->
     <footer class="footer-area">
-        <div class="container">
+        <div class="copyright_part_text">
             <div class="row">
-                <div class="col-xl-3 col-sm-6 col-md-4">
-                    <div class="single-footer-widget footer_1">
-                        <h4>About Us</h4>
-                        <p>Heaven fruitful doesn't over for these theheaven fruitful doe over days
-                            appear creeping seasons sad behold beari ath of it fly signs bearing
-                            be one blessed after.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-4">
-                    <div class="single-footer-widget footer_2">
-                        <h4>Important Link</h4>
-                        <div class="contact_info">
-                            <ul>
-                                <li><a href="#">WHMCS-bridge</a></li>
-                                <li><a href="#"> Search Domain</a></li>
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">Shopping Cart</a></li>
-                                <li><a href="#"> Our Shop</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-6 col-md-4">
-                    <div class="single-footer-widget footer_2">
-                        <h4>Contact us</h4>
-                        <div class="contact_info">
-                            <p><span> Address :</span>Hath of it fly signs bear be one blessed after </p>
-                            <p><span> Phone :</span> +2 36 265 (8060)</p>
-                            <p><span> Email : </span>info@colorlib.com </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-sm-8 col-md-6">
-                    <div class="single-footer-widget footer_3">
-                        <h4>Newsletter</h4>
-                        <p>Heaven fruitful doesn't over lesser in days. Appear creeping seas</p>
-                        <form action="#">
-                            <div class="form-group">
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder='Email Address' onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'">
-                                    <div class="input-group-append">
-                                        <button class="btn" type="button"><i class="fas fa-paper-plane"></i></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                <div class="col-lg-8">
+                    <p class="footer-text m-0">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
                 </div>
             </div>
-            <div class="copyright_part_text">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <p class="footer-text m-0">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="copyright_social_icon text-right">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="ti-dribbble"></i></a>
-                            <a href="#"><i class="fab fa-behance"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </footer>
     <!-- footer part end-->
@@ -179,6 +122,70 @@
     <script src="{{ url('js/jquery.nice-select.min.js') }}"></script>
     <!-- custom js -->
     <script src="{{ url('js/custom.js') }}"></script>
+
+    <script type="text/javascript" src="{{ url('dist/bootstrap-clockpicker.min.js')}}"></script>
+    <script type="text/javascript">
+        $('.clockpicker').clockpicker()
+            .find('input').change(function() {
+                console.log(this.value);
+            });
+        var input = $('#single-input').clockpicker({
+            placement: 'bottom',
+            align: 'center',
+            autoclose: true,
+            'default': 'now'
+        });
+
+        $('.clockpicker-with-callbacks').clockpicker({
+                donetext: 'Done',
+                init: function() {
+                    console.log("colorpicker initiated");
+                },
+                beforeShow: function() {
+                    console.log("before show");
+                },
+                afterShow: function() {
+                    console.log("after show");
+                },
+                beforeHide: function() {
+                    console.log("before hide");
+                },
+                afterHide: function() {
+                    console.log("after hide");
+                },
+                beforeHourSelect: function() {
+                    console.log("before hour selected");
+                },
+                afterHourSelect: function() {
+                    console.log("after hour selected");
+                },
+                beforeDone: function() {
+                    console.log("before done");
+                },
+                afterDone: function() {
+                    console.log("after done");
+                }
+            })
+            .find('input').change(function() {
+                console.log(this.value);
+            });
+
+        // Manually toggle to the minutes view
+        $('#check-minutes').click(function(e) {
+            // Have to stop propagation here
+            e.stopPropagation();
+            input.clockpicker('show')
+                .clockpicker('toggleView', 'minutes');
+        });
+        if (/mobile/i.test(navigator.userAgent)) {
+            $('input').prop('readOnly', true);
+        }
+    </script>
+
+    <!-- Page level custom scripts -->
+    <script src="{{ url('vendor/datatables/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ url('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
+    <script src="{{ url('js/datatables-demo.js')}}"></script>
 </body>
 
 </html>
